@@ -28,26 +28,30 @@ public class DragonAI : MonoBehaviour
 
     float _directionToTarget;
     bool isAttacking = false;
+    bool canMoveAndAttack = true;
     // Update is called once per frame
     void Update()
     {
-        if (target != null)
+        if (canMoveAndAttack)
         {
-            float distance = target.transform.position.x - this.transform.position.x;
-            _directionToTarget = Mathf.Sign(distance);
-
-            if (Mathf.Abs(distance) > distanceToAttack && isAttacking == false)
+            if (target != null)
             {
-                _animator.SetBool("Moving", true);
-                _rigidBody2D.velocity = new Vector2(_directionToTarget * speed, _rigidBody2D.velocity.y);
-            }
-            else if (isAttacking == false)
-            {
-                _animator.SetBool("Moving", false);
-                _rigidBody2D.velocity = new Vector2(0, _rigidBody2D.velocity.y);
+                float distance = target.transform.position.x - this.transform.position.x;
+                _directionToTarget = Mathf.Sign(distance);
 
-                _animator.SetTrigger("Attack");
-                isAttacking = true;
+                if (Mathf.Abs(distance) > distanceToAttack && isAttacking == false)
+                {
+                    _animator.SetBool("Moving", true);
+                    _rigidBody2D.velocity = new Vector2(_directionToTarget * speed, _rigidBody2D.velocity.y);
+                }
+                else if (isAttacking == false)
+                {
+                    _animator.SetBool("Moving", false);
+                    _rigidBody2D.velocity = new Vector2(0, _rigidBody2D.velocity.y);
+
+                    _animator.SetTrigger("Attack");
+                    isAttacking = true;
+                }
             }
         }
     }
@@ -59,17 +63,32 @@ public class DragonAI : MonoBehaviour
 
     void LateUpdate()
     {
-        if (transform.localScale.x > 0
-            //&& _rigidBody2D.velocity.x < 0
-            && _directionToTarget < 0
-           ||
-           transform.localScale.x < 0
-            //&& _rigidBody2D.velocity.x > 0)
-            && _directionToTarget > 0)
+        if (canMoveAndAttack)
         {
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1;
-            transform.localScale = localScale;
+            if (transform.localScale.x > 0
+                //&& _rigidBody2D.velocity.x < 0
+                && _directionToTarget < 0
+               ||
+               transform.localScale.x < 0
+                //&& _rigidBody2D.velocity.x > 0)
+                && _directionToTarget > 0)
+            {
+                Vector3 localScale = transform.localScale;
+                localScale.x *= -1;
+                transform.localScale = localScale;
+            }
         }
+    }
+
+
+    public void DeadAnimation(GameObject character)
+    {
+        _animator.SetTrigger("Dead");
+        canMoveAndAttack = false;
+    }
+
+    public void DestroyDragon()
+    {
+        Destroy(transform.parent.gameObject);
     }
 }

@@ -22,44 +22,51 @@ public class KnightController : MonoBehaviour
     }
 
     bool isAttacking = false;
+    bool canMoveAndAttack = true;
     // Update is called once per frame
     void Update()
     {
-        //utok
-        if (Input.GetButton("Fire1") && isAttacking == false)
+        if (canMoveAndAttack)
         {
-            _animator.SetTrigger("Attack");
-            isAttacking = true;
-        }
+            //utok
+            if (Input.GetButton("Fire1") && isAttacking == false)
+            {
+                _animator.SetTrigger("Attack");
+                isAttacking = true;
+            }
 
-        //horizontalni pohyb
-        float vx = Input.GetAxisRaw("Horizontal");
+            //horizontalni pohyb
+            float vx = Input.GetAxisRaw("Horizontal");
 
-        if(vx != 0)
-        {
-            _animator.SetBool("Moving", true);
-            _rigidBody2D.velocity = new Vector2(vx * speed, _rigidBody2D.velocity.y);
-        }
-        else
-        {
-            _animator.SetBool("Moving", false);
-            _rigidBody2D.velocity = new Vector2(0, _rigidBody2D.velocity.y);
-            //_rigidBody2D.velocity = Vector2.zero;
+            if (vx != 0)
+            {
+                _animator.SetBool("Moving", true);
+                _rigidBody2D.velocity = new Vector2(vx * speed, _rigidBody2D.velocity.y);
+            }
+            else
+            {
+                _animator.SetBool("Moving", false);
+                _rigidBody2D.velocity = new Vector2(0, _rigidBody2D.velocity.y);
+                //_rigidBody2D.velocity = Vector2.zero;
+            }
         }
     }
 
 
     void LateUpdate()
     {
-        if (transform.localScale.x > 0 
+        if (canMoveAndAttack)
+        {
+            if (transform.localScale.x > 0
             && _rigidBody2D.velocity.x < 0
            ||
            transform.localScale.x < 0
             && _rigidBody2D.velocity.x > 0)
-        {
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1;
-            transform.localScale = localScale;
+            {
+                Vector3 localScale = transform.localScale;
+                localScale.x *= -1;
+                transform.localScale = localScale;
+            }
         }
     }
 
@@ -67,5 +74,17 @@ public class KnightController : MonoBehaviour
     public void StopAttacking()
     {
         isAttacking = false;
+    }
+
+
+    public void DeadAnimation(GameObject character)
+    {
+        _animator.SetTrigger("Dead");
+        canMoveAndAttack = false;
+    }
+
+    public void DestroyKnight()
+    {
+        Destroy(this.gameObject);
     }
 }
