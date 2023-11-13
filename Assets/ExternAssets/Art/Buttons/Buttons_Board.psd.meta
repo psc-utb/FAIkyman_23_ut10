@@ -1,46 +1,70 @@
 fileFormatVersion: 2
-guid: eedab6e174426ff4296188f3538d469d
+guid: 05a29073e67214ba58eebd44c5aa56f8
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: knight_attack_0
+    second: Buttons_Board_0
   - first:
       213: 21300002
-    second: knight_attack_1
+    second: Buttons_Board_1
   - first:
       213: 21300004
-    second: knight_attack_2
+    second: Buttons_Board_2
   - first:
       213: 21300006
-    second: knight_attack_3
+    second: Buttons_Board_3
   - first:
       213: 21300008
-    second: knight_attack_4
+    second: Buttons_Board_4
   - first:
       213: 21300010
-    second: knight_attack_5
+    second: Buttons_Board_5
   - first:
       213: 21300012
-    second: knight_attack_6
+    second: Buttons_Board_6
   - first:
       213: 21300014
-    second: knight_attack_7
+    second: Buttons_Board_7
   - first:
       213: 21300016
-    second: knight_attack_8
+    second: Buttons_Board_8
   - first:
       213: 21300018
-    second: knight_attack_9
+    second: Buttons_Board_9
   - first:
       213: 21300020
-    second: knight_attack_10
+    second: Buttons_Board_10
   - first:
       213: 21300022
-    second: knight_attack_11
+    second: Buttons_Board_11
   - first:
       213: 21300024
-    second: knight_attack_12
+    second: Buttons_Board_12
+  - first:
+      213: 21300026
+    second: Buttons_Board_13
+  - first:
+      213: 21300028
+    second: Buttons_Board_14
+  - first:
+      213: 21300030
+    second: Buttons_Board_15
+  - first:
+      213: 21300032
+    second: Buttons_Board_16
+  - first:
+      213: 21300034
+    second: Buttons_Board_17
+  - first:
+      213: 21300036
+    second: Buttons_Board_18
+  - first:
+      213: 21300038
+    second: Buttons_Board_19
+  - first:
+      213: 21300040
+    second: Buttons_Board_20
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -59,12 +83,11 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -103,7 +126,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
-  swizzle: 50462976
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
@@ -116,7 +138,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -129,7 +150,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -142,7 +162,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -155,7 +174,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -168,22 +186,21 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knight_attack_0
+      name: Buttons_Board_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
-        width: 150
-        height: 150
+        y: 716
+        width: 102
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,15 +213,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_1
+      name: Buttons_Board_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 600
-        width: 150
-        height: 150
+        x: 122
+        y: 716
+        width: 102
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,15 +234,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_2
+      name: Buttons_Board_2
       rect:
         serializedVersion: 2
-        x: 300
-        y: 600
-        width: 150
-        height: 150
+        x: 238
+        y: 716
+        width: 324
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,15 +255,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_3
+      name: Buttons_Board_3
       rect:
         serializedVersion: 2
-        x: 450
-        y: 600
-        width: 150
-        height: 150
+        x: 0
+        y: 596
+        width: 102
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,15 +276,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_4
+      name: Buttons_Board_4
       rect:
         serializedVersion: 2
-        x: 600
-        y: 600
-        width: 150
-        height: 150
+        x: 122
+        y: 595
+        width: 102
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,15 +297,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_5
+      name: Buttons_Board_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 450
-        width: 150
-        height: 150
+        x: 238
+        y: 595
+        width: 324
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,15 +318,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_6
+      name: Buttons_Board_6
       rect:
         serializedVersion: 2
-        x: 150
-        y: 450
-        width: 150
-        height: 150
+        x: 0
+        y: 478
+        width: 102
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,15 +339,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_7
+      name: Buttons_Board_7
       rect:
         serializedVersion: 2
-        x: 300
-        y: 450
-        width: 150
-        height: 150
+        x: 122
+        y: 477
+        width: 102
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,15 +360,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_8
+      name: Buttons_Board_8
       rect:
         serializedVersion: 2
-        x: 450
-        y: 450
-        width: 150
-        height: 150
+        x: 238
+        y: 477
+        width: 324
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -364,15 +381,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_9
+      name: Buttons_Board_9
       rect:
         serializedVersion: 2
-        x: 600
-        y: 450
-        width: 150
-        height: 150
+        x: 0
+        y: 359
+        width: 102
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,15 +402,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_10
+      name: Buttons_Board_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 300
-        width: 150
-        height: 150
+        x: 122
+        y: 358
+        width: 102
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -406,15 +423,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_11
+      name: Buttons_Board_11
       rect:
         serializedVersion: 2
-        x: 150
-        y: 300
-        width: 150
-        height: 150
+        x: 238
+        y: 358
+        width: 324
+        height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -427,15 +444,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_12
+      name: Buttons_Board_12
       rect:
         serializedVersion: 2
-        x: 300
-        y: 300
-        width: 150
-        height: 150
+        x: 0
+        y: 243
+        width: 102
+        height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -443,6 +460,174 @@ TextureImporter:
       bones: []
       spriteID: 83305410000000000800000000000000
       internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_Board_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 242
+        width: 102
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_Board_14
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 242
+        width: 324
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_Board_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 123
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_Board_16
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 121
+        width: 102
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_Board_17
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 122
+        width: 324
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_Board_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_Board_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 102
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_Board_20
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 324
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []
@@ -458,21 +643,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      knight_attack_0: 21300000
-      knight_attack_1: 21300002
-      knight_attack_10: 21300020
-      knight_attack_11: 21300022
-      knight_attack_12: 21300024
-      knight_attack_2: 21300004
-      knight_attack_3: 21300006
-      knight_attack_4: 21300008
-      knight_attack_5: 21300010
-      knight_attack_6: 21300012
-      knight_attack_7: 21300014
-      knight_attack_8: 21300016
-      knight_attack_9: 21300018
-  mipmapLimitGroupName: 
-  pSDRemoveMatte: 0
+      Buttons_Board_9: 21300018
+      Buttons_Board_6: 21300012
+      Buttons_Board_15: 21300030
+      Buttons_Board_8: 21300016
+      Buttons_Board_20: 21300040
+      Buttons_Board_3: 21300006
+      Buttons_Board_17: 21300034
+      Buttons_Board_14: 21300028
+      Buttons_Board_7: 21300014
+      Buttons_Board_4: 21300008
+      Buttons_Board_18: 21300036
+      Buttons_Board_13: 21300026
+      Buttons_Board_19: 21300038
+      Buttons_Board_1: 21300002
+      Buttons_Board_10: 21300020
+      Buttons_Board_0: 21300000
+      Buttons_Board_16: 21300032
+      Buttons_Board_2: 21300004
+      Buttons_Board_5: 21300010
+      Buttons_Board_11: 21300022
+      Buttons_Board_12: 21300024
+  spritePackingTag: 
+  pSDRemoveMatte: 1
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
