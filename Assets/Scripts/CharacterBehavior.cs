@@ -13,6 +13,7 @@ public class CharacterBehavior : MonoBehaviour, IGetHealthSystem
     HealthSystem healthSystem;
 
     public UnityEvent<GameObject> Dead;
+    public UnityEvent<GameObject, int> HealthChanged;
 
     void Awake()
     {
@@ -26,10 +27,10 @@ public class CharacterBehavior : MonoBehaviour, IGetHealthSystem
         return character.JeZiva();
     }
 
-    private void Character_ZdraviZmeneno(int arg1, int arg2)
+    private void Character_ZdraviZmeneno(int oldHealth, int newHealth)
     {
         //vykreslovat cislo zasahu
-
+        HealthChanged?.Invoke(this.gameObject, newHealth - oldHealth);
 
         if (character.JeZiva() == false)
         {
